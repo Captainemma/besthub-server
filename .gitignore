@@ -1,0 +1,31 @@
+# ========== NODE MODULES ==========
+node_modules/
+
+# ========== ENVIRONMENT ==========
+.env
+.env.local
+
+# ========== DATABASE ==========
+*.db
+*.sqlite
+database/
+data/
+
+# ========== UPLOADS ==========
+uploads/
+temp/
+
+# ========== LOGS ==========
+*.log
+logs/
+npm-debug.log*
+
+# ========== VS CODE ==========
+.vscode/
+
+# ========== SYSTEM ==========
+.DS_Store
+Thumbs.db
+
+# ========== SESSIONS ==========
+sessions/
