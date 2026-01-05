@@ -35,9 +35,13 @@ const PORT = process.env.PORT || 4400;
 
 
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: [
+    "https://besthubgh.vercel.app",  // Your Vercel URL
+    "http://localhost:5173"           // Local development
+  ],
   credentials: true
 }));
+
 app.use(cookieParser());
 app.use(express.json());
 
@@ -72,6 +76,8 @@ app.use("/api/admin/settings", adminSettingsRoutes);
 app.get("/api/health", (req, res) => {
   res.status(200).json({ success: true, message: "Server is running" });
 });
+
+
 
 // Root endpoint
 app.get("/", (req, res) => {
