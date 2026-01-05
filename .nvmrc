@@ -1,8 +1,1 @@
-# Make sure you're in server folder
-cd server
-
-# Create .nvmrc file with exact version
-echo "20.12.2" > .nvmrc
-
-# Verify it was created
-type .nvmrc
+20.12.2
